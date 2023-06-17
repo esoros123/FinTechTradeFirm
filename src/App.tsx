@@ -6,7 +6,7 @@ function App() {
   const [interest, setInterest] = useState("")
   const [tradeDays, setTradeDays] = useState("")
   const [err, setErr] = useState("")
-  const [result, setResult] = useState<Array<Number>>([])
+  const [result, setResult] = useState<Array<number>>([])
 
   const [inputWidth, setInputWidth] = useState<number>()
   const [inputHeight, setInputHeight] = useState<number>()
@@ -22,9 +22,7 @@ function App() {
     setInputHeight(document.getElementById("fname")?.getBoundingClientRect().height)
   }
 
-  function calculateAmount(e : any) {
-    e.preventDefault()
-    
+  function calculateAmount() {    
     let amount_num = parseInt(amount)
     if(!amount_num) {
       setErr("unable to parse amount")
