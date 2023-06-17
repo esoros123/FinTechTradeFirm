@@ -50,7 +50,7 @@ function App() {
   }
   
   return <div style={{display: "grid", height: "100%", width: "100%", placeContent: "center"}}>
-        <h3 style={{placeSelf: "center", fontWeight: "lighter"}}>Compound Interest Calculator</h3>
+        <h3 style={{placeSelf: "center", fontWeight: "lighter"}}>Compound Interest Calculator!</h3>
         <div className='form'>          
           <label htmlFor="fname">Starting Amount</label><br />
           <input value={amount} onChange={(e) => setAmount(e.currentTarget.value)} style={{marginBottom: ".25rem"}} type="text" id="fname" name="fname" /><br />
